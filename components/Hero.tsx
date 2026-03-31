@@ -65,20 +65,20 @@ export default function Hero() {
             </p>
 
             {/* Stats row */}
-            <div className="flex flex-wrap gap-6 mb-10">
+            <div className="flex flex-wrap gap-8 mb-10">
               {[
-                { value: "%31", label: "Daha Yüksek Cevap Oranı" },
+                { value: "+%31", label: "Daha Yüksek Cevap Oranı" },
                 { value: "7/24", label: "Kesintisiz Çalışır" },
                 { value: "3+ Saat", label: "Günlük Tasarruf" },
               ].map((s) => (
-                <div key={s.label}>
+                <div key={s.label} className="flex flex-col">
                   <div
-                    className="text-2xl font-bold"
+                    className="text-3xl font-bold leading-none"
                     style={{ color: "var(--cyan)", fontFamily: "Syne, sans-serif" }}
                   >
                     {s.value}
                   </div>
-                  <div className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>
+                  <div className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>
                     {s.label}
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Hero() {
               {/* Floating stat */}
               <div
                 className="hidden sm:block absolute -bottom-4 -left-4 glass rounded-xl px-4 py-3 text-xs shadow-xl"
-                style={{ border: "1px solid rgba(45,212,216,0.2)" }}
+                style={{ border: "1px solid rgba(45,212,216,0.2)", zIndex: 20 }}
               >
                 <div className="font-bold text-base" style={{ color: "var(--cyan)", fontFamily: "Syne, sans-serif" }}>+%47</div>
                 <div style={{ color: "var(--text-muted)" }}>Lead dönüşüm artışı</div>

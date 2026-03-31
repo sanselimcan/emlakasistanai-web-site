@@ -174,14 +174,14 @@ export default function VapiDemo() {
             <div
               className="rounded-xl p-4 mb-6 text-sm"
               style={{
-                background: "rgba(255,200,50,0.07)",
-                border: "1px solid rgba(255,200,50,0.2)",
-                color: "rgba(255,200,50,0.9)",
+                background: "rgba(45,212,216,0.06)",
+                border: "1px solid rgba(45,212,216,0.2)",
+                color: "var(--text-muted)",
               }}
             >
-              <p className="font-medium mb-1">Demo Hazırlanıyor</p>
-              <p style={{ opacity: 0.8 }}>
-                Vapi API anahtarınızı <code className="bg-black/30 px-1 rounded">.env.local</code> dosyasına ekleyin. Canlı demoya kısa sürede erişebileceksiniz.
+              <p className="font-medium mb-1" style={{ color: "var(--cyan)" }}>🎧 Canlı Demo Yakında</p>
+              <p style={{ opacity: 0.85 }}>
+                Demo asistanımız hazırlanıyor. Şimdi formu doldurarak size özel bir demo randevusu alın.
               </p>
             </div>
           )}
