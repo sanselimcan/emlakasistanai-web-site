@@ -193,14 +193,6 @@ export default function Hero() {
                 <div style={{ color: "var(--text-muted)" }}>Ahmet B. — Yarın 14:00</div>
               </div>
 
-              {/* Floating stat */}
-              <div
-                className="hidden sm:block absolute -bottom-4 -left-4 glass rounded-xl px-4 py-3 text-xs shadow-xl"
-                style={{ border: "1px solid rgba(45,212,216,0.2)", zIndex: 20 }}
-              >
-                <div className="font-bold text-base" style={{ color: "var(--cyan)", fontFamily: "Syne, sans-serif" }}>+%47</div>
-                <div style={{ color: "var(--text-muted)" }}>Lead dönüşüm artışı</div>
-              </div>
             </div>
           </div>
         </div>
