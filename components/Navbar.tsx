@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,20 +24,15 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative w-8 h-8">
-            {/* House icon SVG */}
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-              <rect width="40" height="40" rx="10" fill="#2DD4D8" opacity="0.15"/>
-              <path d="M20 8L6 18.5V34h10V25h8v9h10V18.5L20 8z" fill="#2DD4D8"/>
-              <path d="M17 34V25h6v9" fill="#1B3A5C"/>
-            </svg>
-          </div>
-          <span className="font-syne font-700 text-lg tracking-tight">
-            <span style={{ color: "#2DD4D8" }}>Emlak</span>
-            <span style={{ color: "#e8f4f8" }}>Asistan</span>
-            <span style={{ color: "#2DD4D8", fontSize: "0.65em", verticalAlign: "super" }}>AI</span>
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/logo.png"
+            alt="EmlakAsistan AI"
+            width={140}
+            height={56}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
