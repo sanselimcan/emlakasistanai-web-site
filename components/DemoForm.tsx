@@ -53,7 +53,16 @@ export default function DemoForm() {
   const next = () => setStep((s) => Math.min(s + 1, 4) as Step);
   const back = () => setStep((s) => Math.max(s - 1, 1) as Step);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    try {
+      await fetch("https://n8n-s.taklops.com/webhook/emlak-form-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch {
+      // Bildirim gönderilemese bile UI'ı ilerlet
+    }
     setSubmitted(true);
   };
 
