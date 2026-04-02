@@ -28,9 +28,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="EmlakAsistan AI"
-            width={140}
-            height={56}
-            className="h-10 w-auto object-contain"
+            width={180}
+            height={72}
+            className="h-12 md:h-14 w-auto object-contain"
             priority
           />
         </Link>
