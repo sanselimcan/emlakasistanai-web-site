@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "magic-mcp-docs": {
-      "type": "sse",
-      "url": "https://gitmcp.io/21st-dev/magic-mcp.git"
-    }
-  }
-}
